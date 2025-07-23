@@ -5,6 +5,8 @@ using Microsoft.AspNetCore.Components.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 
+using Azunt.BranchManagement; // 네임스페이스 임포트
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
@@ -36,6 +38,9 @@ builder.Services.AddIdentityCore<ApplicationUser>(options => options.SignIn.Requ
 builder.Services.AddSingleton<IEmailSender<ApplicationUser>, IdentityNoOpEmailSender>();
 
 var app = builder.Build();
+
+// Branches 테이블 직접 초기화 (마스터 DB 대상)
+BranchesTableBuilder.Run(app.Services, forMaster: true);
 
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())

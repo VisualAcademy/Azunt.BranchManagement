@@ -18,4 +18,8 @@
     <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="8.0.18" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Azunt.BranchManagement\Azunt.BranchManagement.csproj" />
+  </ItemGroup>
+
 </Project>

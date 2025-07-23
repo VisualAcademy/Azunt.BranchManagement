@@ -4,6 +4,26 @@
     <TargetFramework>net8.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
+
+      <!-- 버전 정보 -->
+      <VersionPrefix>1.0.0</VersionPrefix>
+      <VersionSuffix></VersionSuffix>
+
+      <!-- NuGet 기본 정보 -->
+      <Title>Azunt.BranchManagement</Title>
+      <Description>Azunt.BranchManagement is a reusable .NET module for managing notes in multi-tenant systems. It supports SQL Server and is designed for extensibility with EF Core, Dapper, and ADO.NET.</Description>
+      <PackageTags>Azunt, note, content, multi-tenant, EFCore, Dapper, ADO.NET, Blazor, SQLServer</PackageTags>
+
+      <Authors>VisualAcademy</Authors>
+      <Company>Hawaso</Company>
+
+      <!-- NuGet 링크 및 저장소 -->
+      <PackageProjectUrl>https://github.com/VisualAcademy/Azunt.BranchManagement</PackageProjectUrl>
+      <RepositoryUrl>https://github.com/VisualAcademy/Azunt.BranchManagement</RepositoryUrl>
+      <RepositoryType>git</RepositoryType>
+
+      <!-- 저작권 정보 -->
+      <Copyright>© 2025 Hawaso. All rights reserved.</Copyright>
   </PropertyGroup>
 
     <ItemGroup>
